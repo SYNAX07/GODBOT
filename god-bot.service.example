@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram God Bot
+After=network.target
+
+[Service]
+Type=simple
+# Change these paths/user to match your VPS setup
+User=ubuntu
+WorkingDirectory=/home/ubuntu/god_bot
+ExecStart=/home/ubuntu/god_bot/venv/bin/python run.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
