@@ -122,7 +122,7 @@ token and group data never get pushed.
 - SQLite is fine for dozens–hundreds of groups. If you scale to a very large
   number of groups, consider moving to Postgres.
 
-## Roadmap (matches the feature list you screenshotted)
+## Roadmap 
 
 Not yet built, but the modular structure makes each of these a self-contained
 addition in `bot/handlers/`: Antiflood, AntiRaid, Approval, Blocklists,
